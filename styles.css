@@ -1,1 +1,13 @@
+function showJoke() {
+    const jokeElement = document.getElementById('joke');
+    const jokes = [
+        "Why don't skeletons fight each other? They don't have the guts.",
+        "What did one ocean say to the other ocean? Nothing, they just waved.",
+        "Why was the math book sad? Because it had too many problems.",
+        "What’s orange and sounds like a parrot? A carrot!"
+    ];
+
+    const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+    jokeElement.textContent = randomJoke;
+}
 
